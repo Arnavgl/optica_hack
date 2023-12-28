@@ -4,6 +4,10 @@
     <title>WhatsApp Bulk Messaging System</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Including Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Including Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -37,6 +41,10 @@
         <p>&copy; 2023 Code Sprinters. All rights reserved.</p>
     </footer>
 
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <script>
         function processCSV() {
             // Using AJAX to call the PHP script
@@ -55,6 +63,6 @@
             xhr.send(formData);
         }
     </script>
-    
+
 </body>
 </html>
