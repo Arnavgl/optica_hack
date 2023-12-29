@@ -7,8 +7,8 @@ require __DIR__ . '/vendor/autoload.php';
 use Twilio\Rest\Client;
 
 // Twilio credentials
-$accountSid = 'AC2ce8955f2a65a44c00da2a0dfdd63cbd';
-$authToken = 'd9950fc82fc9d06ed2882d376023ad22';
+$accountSid = ''; //write account sid
+$authToken = ''; //write auth token
 $fromWhatsappNumber = '+14155238886';
 
 // Create Twilio client

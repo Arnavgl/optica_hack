@@ -16,7 +16,7 @@
         <div class="card">
             <h1 class="text-center mb-4">WhatsApp Bulk Messaging System</h1>
 
-            <form action="send_whatsapp_api.php" method="post" enctype="multipart/form-data">
+            <form action="send_whatsapp_api_rc.php" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="message">Message:</label>
                     <textarea class="form-control" id="message" name="message" rows="4" placeholder="Write your message here."></textarea>
