@@ -81,7 +81,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    background-image: url('background-image.jpg'); /* Add your image URL here */
+    background-image: url('background_image.jpg'); /* Adding image URL here */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
