@@ -31,6 +31,10 @@ function sendWhatsappMessage($to, $message) {
         echo "Error sending message to $to: " . $e->getMessage() . PHP_EOL;
     }
 }
+
+// Debugging: Output received data
+echo "Received POST data: " . print_r($_POST, true) . PHP_EOL;
+
 // Process form data if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Extract form inputs
@@ -57,4 +61,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 }
+
 ?>
