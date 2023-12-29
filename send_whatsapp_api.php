@@ -31,5 +31,30 @@ function sendWhatsappMessage($to, $message) {
         echo "Error sending message to $to: " . $e->getMessage() . PHP_EOL;
     }
 }
+// Process form data if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Extract form inputs
+    $message = $_POST['message'] ?? '';
+    $phoneNumbers = $_POST['phoneNumbers'] ?? '';
 
+    // Debugging: Output extracted data
+    echo "Extracted message: $message" . PHP_EOL;
+    echo "Extracted phone numbers: $phoneNumbers" . PHP_EOL;
+
+    // Validate inputs (you can add more validation as needed)
+    if (empty($message) || empty($phoneNumbers)) {
+        echo "Please provide both a message and phone numbers.";
+    } else {
+        // If there's only one phone number, send a single message
+        if (strpos($phoneNumbers, ',') === false) {
+            sendWhatsappMessage($phoneNumbers, $message);
+        } else {
+            // If there are multiple phone numbers, split and send individual messages
+            $phoneNumbersArray = explode(',', $phoneNumbers);
+            foreach ($phoneNumbersArray as $phoneNumber) {
+                sendWhatsappMessage(trim($phoneNumber), $message);
+            }
+        }
+    }
+}
 ?>
