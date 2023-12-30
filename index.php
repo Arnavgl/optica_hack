@@ -18,12 +18,12 @@
 
             <form action="send_whatsapp_api_rc.php" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Write your message here."></textarea>
+                    <label for="message">MESSAGE</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Please write your message here."></textarea>
                 </div>
 
                 <div class="form-group">
-                    <label for="csvFileInput">Upload CSV:</label>
+                    <label for="csvFileInput">UPLOAD CSV</label>
                     <input type="file" class="form-control-file" id="csvFileInput" name="csvFileInput" accept=".csv">
                 </div>
 
@@ -40,7 +40,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2023 Code Sprinters. All rights reserved.</p>
+        <p>&copy; 2023 Code Sprinters. All Rights Reserved.</p>
     </footer>
 
     <!-- Include Bootstrap JS and jQuery -->

@@ -1,17 +1,29 @@
 h1 {
     text-align: center;
-    color: #333;
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #8728e0a3;
+    font-family: Gentona, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* css review */
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-image: url('background_image.jpg'); /* Adding image URL here */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* color: #0f0; Green text on the background image */
 }
 
 .card {
@@ -19,7 +31,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 25px;
     border-radius: 40px;
-    width: 400px;
+    width: 455px;
+    margin: 0 auto;
     
 }
 
@@ -32,19 +45,23 @@ label {
 textarea, input[type="file"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     box-sizing: border-box;
+    
 }
 
+    
+    
 button, input[type="submit"] {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 40px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 22px;
     width: 100%;
+    font-weight: bold;
 }
 
 button:hover, input[type="submit"]:hover {
@@ -60,6 +77,32 @@ input[type="text"], textarea {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
+    border-radius: 80px;
+    border: 20px solid #4CAF50; /* Green border */
+}
+
+/* Adjustments for CSV file input */
+.form-control-file {
+    border: 2px solid white; /* Green border */
+    border-radius: 18px;
+}
+
+
+/* Styling for Process CSV button */
+.btn-success {
+    background-color: #007BFF; /* Yellow button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 22px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.btn-success:hover {
+    background-color: #0056b3; /* Darker yellow on hover */
 }
 
 footer {
@@ -72,32 +115,20 @@ footer {
 }
 
 footer p {
-    margin: 0;
-    font-size: 14px;
+    margin:auto;
+    font-size: 18px;
     color: white;
 }
 
-/* css review */
-body {
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0;
-    padding: 0;
-    background-image: url('background_image.jpg'); /* Adding image URL here */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #0f0; /* Green text on the background image */
-}
-
-    .container {
-        max-width: 800px;
-        margin: 100px auto;
-        padding: 20px;
-        background-color:transparent; /* Dark overlay on top of the background image */
-        /* border: 2px solid #0f0; */
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 255, 0, 0.1); /* Green box shadow */
-    } 
+/*.container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color:transparent; /* Dark overlay on top of the background image */
+/*    border: 2px solid #0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.1); /* Green box shadow */
+/*}*/ 
 
 /*.form-container {
     margin-top: 20px;
@@ -131,4 +162,4 @@ button {
 
 button:hover {
     background-color: #003; /* Darker blue on hover */
-/*}
+/*}*/
