@@ -23,9 +23,9 @@ now = datetime.now()
 # Iterate over rows in the DataFrame
 for index, row in df.iterrows():
     phone_number = str(row['Phone'])
-    message = 'Your custom message here'  # Replace with your desired message
+    message = 'This is a presentation message for JIIT Optica Hackathon.'
     hour = now.hour
-    minute = now.minute + 2  # Send the message 2 minutes from now
+    minute = now.minute + 2 
 
     # Call the function to send the message
     send_whatsapp_messages(phone_number, message, hour, minute)
