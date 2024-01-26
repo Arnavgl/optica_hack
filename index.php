@@ -30,7 +30,7 @@
                 <!-- Add a hidden input field to store phone numbers -->
                 <input type="hidden" name="phoneNumbers" id="phoneNumbersInput" value="">
 
-                <button type="button" class="btn btn-success" onclick="processCSV()">Process CSV</button>
+                <!-- <button type="button" class="btn btn-success" onclick="processCSV()">Process CSV</button> -->
                 <br><br>
                     <input type="submit" class="btn btn-primary" name="submit" value="Send">
 
@@ -40,7 +40,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2023 Code Sprinters. All Rights Reserved.</p>
+        <p>&copy; 2024 Code Sprinters. All Rights Reserved.</p>
     </footer>
 
     <!-- Include Bootstrap JS and jQuery -->

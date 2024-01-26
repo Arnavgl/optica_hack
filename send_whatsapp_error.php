@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error Page</title>
     <link rel="stylesheet" href="confirmcss.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Adlam:wght@500&display=swap');
+      footer {
+        background-color: black;
+        padding: 8px;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        font-family: 'Noto Sans Adlam', sans-serif;
+        text-transform: none;
+        font-size: 1.45em;
+      }
+      footer p {
+        margin:auto;
+        font-size: 18px;
+        color: white;
+      }
+    </style>
 </head>
 <body>
 
@@ -22,6 +41,9 @@
           <button class="button-box" onclick="location.href='index.php'"><h1 class="red"><b>try again</b></h1></button>
         </div>
       </div>
+      <footer>
+        <p>&copy; 2024 Code Sprinters. All Rights Reserved.</p>
+      </footer>
 
 </body>
 </html>

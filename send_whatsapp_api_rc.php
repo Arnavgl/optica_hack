@@ -14,8 +14,8 @@ if (isset($_POST['submit'])) {
 
         // Message input from the form
         $message = $_POST['message'];
-        $appKey = 'f55ddb55-c82f-4ab3-ae1c-8e21aca193ff';
-        $authKey = '2I9a8pDGs9XPYALceOfcE4tBmO20giHixwslQ4FiJ5Ia2z4ZPW';
+        $appKey = 'Your API Key';
+        $authKey = 'Your Auth Key';
         $sandbox = 'false';
 
         // Flag to check if any message was successfully sent
@@ -53,8 +53,6 @@ if (isset($_POST['submit'])) {
                 echo "Error: " . curl_error($curl);
             }
             else {
-                
-                
                 // Parse the response (assuming it's in JSON format)
                 $responseData = json_decode($response, true);
             
